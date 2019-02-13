@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="50dp"
+                android:text="Topic"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:id="@+id/topicid"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="0.8"
+                android:hint="Topic"
+                android:textSize="18dp"
+                android:gravity="top|left"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp"
+                android:lines="10"
+                android:maxLines="10"
+                android:textStyle="normal"
+                android:minLines="10"
+                android:scrollbars="vertical"
+                android:background="@drawable/border"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="50dp"
+                android:text="Server"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:id="@+id/serverid"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:hint="Server"
+                android:textSize="18dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="2dp"
+                android:background="@drawable/border"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/okpopbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Ok"
+            android:layout_gravity="center"
+            android:textColor="#fa1b8ae4"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border"
+            />
+    </LinearLayout>
+
+</LinearLayout>
